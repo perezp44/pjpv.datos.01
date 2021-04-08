@@ -1,5 +1,6 @@
 #---- This file documents los ficheros de datos del pkg
 
+#- Poblacion ----------------
 
 #' Población municipal del INE. (Spain)
 #'
@@ -24,7 +25,7 @@
 #'   \item ine_ccaa: Código INE de la CA (2 dígitos). Character
 #'   \item ine_ccaa.n: Nombre de la CA. Character
 #'   \item capital_prov: Identifica si el municipio es capital de provincia. Factor
-#'   \item capital_prov: Identifica si el municipio es capital de CA. Factor
+#'   \item capital_ccaa: Identifica si el municipio es capital de CA. Factor
 #'   }
 #'
 #' @examples
@@ -92,5 +93,109 @@
 "pob_ccaa_1996_2020"
 
 
+#- LAU2 geometrias ---------------------------------
 
+#' Geometrías municipales 2020, de LAU2boundaries4Spain. (Spain)
+#'
+#' Geometrías municipales 2020 (SPAIN). Sacados del package LAU2boundaries4Spain.
+#' Hay 8.131 municipios + 81 condominios = 8.212 filas
+#' Recuerda que he desplazado Canarias
+#' Recuerda que hay dos tipos de centroides. Desplazados y no
+#' X e Y (sin desplazar, bueno Canarias sí está desplazada)
+#' X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien en los mapas)
+#'
+#' @source \url{https://github.com/rOpenSpain/LAU2boundaries4spain}
+#'
+#' @format An sf data.frame with 8.212 rows and 16 variables
+#' \itemize{
+#'   \item ine_muni: Código INE del municipio (5 dígitos). Character
+#'   \item ine_muni.n: Nombre del municipio. Character. Los condominios son NA's
+#'   \item ine_prov: Codigo INE de la provincia (2 dígitos). Character
+#'   \item ine_prov.n: Nombre de la provincia. Character
+#'   \item ine_ccaa: Código INE de la CA (2 dígitos). Character
+#'   \item ine_ccaa.n: Nombre de la CA. Character
+#'   \item capital_prov: Identifica si el municipio es capital de provincia. Factor
+#'   \item capital_ccaa: Identifica si el municipio es capital de CA. Factor
+#'   \item pob_2020: Población municipal total. Numeric
+#'   \item ine_muni.n.condo: Nombre del municipio y de los condominios. Character
+#'   \item ine_ccaa.n.pjp: Nombre de la CA no oficial pero good. Character
+#'   \item X: Centroide (X). Numeric
+#'   \item Y: Centroide (Y). Numeric
+#'   \item geometry: geometría de los municipios. sfc_MULTIPOLYGON
+#'   \item X1: Centroide (X) pero desplazado para Ceuta y Melilla. Numeric
+#'   \item Y1: Centroide (Y) pero desplazado para Ceuta y Melilla. Numeric
+#'   }
+#'
+#' @examples
+#' \dontrun{
+#'  LAU2_muni_2020_canarias <- LAU2_muni_2020_canarias
+#' }
+#'
+"LAU2_muni_2020_canarias"
+
+
+
+#' Geometrías provinciales 2020, de LAU2boundaries4Spain. (Spain)
+#'
+#' Geometrías municipales 2020 (SPAIN). Sacados del package LAU2boundaries4Spain.
+#' Recuerda que he desplazado Canarias
+#' Recuerda que hay dos tipos de centroides.
+#' X e Y (sin desplazar, bueno Canarias sí está desplazada)
+#' X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien e los mapas)
+#'
+#' @source \url{https://github.com/rOpenSpain/LAU2boundaries4spain}
+#'
+#' @format An sf data.frame with 52 rows and 10 variables
+#' \itemize{
+#'   \item ine_prov: Codigo INE de la provincia (2 dígitos). Character
+#'   \item ine_prov.n: Nombre de la provincia. Character
+#'   \item ine_ccaa: Código INE de la CA (2 dígitos). Character
+#'   \item ine_ccaa.n: Nombre de la CA. Character
+#'   \item pob_2020: Población provincial total. Numeric
+#'   \item ine_ccaa.n.pjp: Nombre de la CA no oficial pero good. Character
+#'   \item X: Centroide (X). Numeric
+#'   \item Y: Centroide (Y). Numeric
+#'   \item geometry: geometría provincial. sfc_GEOMETRY
+#'   \item X1: Centroide (X) pero desplazado para Ceuta y Melilla. Numeric
+#'   \item Y1: Centroide (Y) pero desplazado para Ceuta y Melilla. Numeric
+#'   }
+#'
+#' @examples
+#' \dontrun{
+#'  LAU2_prov_2020_canarias <- LAU2_prov_2020_canarias
+#' }
+#'
+"LAU2_prov_2020_canarias"
+
+
+
+#' Geometrías para las CC.AA, 2020, de LAU2boundaries4Spain. (Spain)
+#'
+#' Geometrías municipales 2020 (SPAIN). Sacados del package LAU2boundaries4Spain.
+#' Recuerda que he desplazado Canarias
+#' Recuerda que hay dos tipos de centroides.
+#' X e Y (sin desplazar, bueno Canarias sí está desplazada)
+#' X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien e los mapas)
+#'
+#' @source \url{https://github.com/rOpenSpain/LAU2boundaries4spain}
+#'
+#' @format An sf data.frame with 19 rows and 8 variables
+#' \itemize{
+#'   \item ine_ccaa: Código INE de la CA (2 dígitos). Character
+#'   \item ine_ccaa.n: Nombre de la CA. Character
+#'   \item pob_2020: Población por CC.AA  total. Numeric
+#'   \item ine_ccaa.n.pjp: Nombre de la CA no oficial pero good. Character
+#'   \item X: Centroide (X). Numeric
+#'   \item Y: Centroide (Y). Numeric
+#'   \item geometry: geometría provincial. sfc_GEOMETRY
+#'   \item X1: Centroide (X) pero desplazado para Ceuta y Melilla. Numeric
+#'   \item Y1: Centroide (Y) pero desplazado para Ceuta y Melilla. Numeric
+#'   }
+#'
+#' @examples
+#' \dontrun{
+#'  LAU2_ccaa_2020_canarias <- LAU2_ccaa_2020_canarias
+#' }
+#'
+"LAU2_ccaa_2020_canarias"
 

@@ -364,12 +364,23 @@ help(package = pjpv2020.01)
 
 
 
-#- YAY ya 2021 -------------------------------------------
-remotes::install_github("perezp44/pjpv.datos.01")
-ss <- pjpv.datos.01::pob_muni_1996_2020
-pjpv.datos.01::pob_muni_1996_2020
-library(pjpv.datos.01)
-pob_muni_1996_2020
+#- YA YA en 2021 -------------------------------------------
+
+#- DOCUMENTAR y BUILD the pkg -----------
+#- 1) primero has de añadir los datos: "./data-raw/creando_mis_datasets.R"
+#- 2) has de documentar los datos en : "./R/document_data.R"
+#- 3) Añadir el dataset en "NEWS.md" y en "README.md"
+#- 4) Efectivamente documentar, corriendo devtools::document()
+#- 5) BUILD el pkg desde RStudio: "Install and Restart"
+
 
 devtools::document()         #- procesa los roxygen comments y las vignettes
 devtools::build()
+
+
+#- Instalar y comprobar que todo (documentacion y datos) ha funcionado
+remotes::install_github("perezp44/pjpv.datos.01")
+ss <- pjpv.datos.01::pob_muni_1996_2020
+pjpv.datos.01::pob_prov_1996_2020
+library(pjpv.datos.01)
+pob_muni_1996_2020

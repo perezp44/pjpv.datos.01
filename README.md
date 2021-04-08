@@ -16,4 +16,17 @@ remotes::install_github("perezp44/pjpv.datos.01")
 
 ## Conjuntos de datos
 
-- Población municipal: `pob_muni_1996_2020`
+- Población municipal:  `pob_muni_1996_2020`  
+
+- Población provincial: `pob_prov_1996_2020`  
+
+- Población por CC.AA:  `pob_ccaa_1996_2020`  
+
+- geometrías municipales de LAU2 para 2020 (Canarias desplazada): `LAU2_muni_2020_canarias`
+
+- geometrías provinciales de LAU2 para 2020 (Canarias desplazada): `LAU2_prov_2020_canarias`
+
+- geometrías para CC.AA de LAU2 para 2020 (Canarias desplazada): `LAU2_ccaa_2020_canarias`
+
+
+

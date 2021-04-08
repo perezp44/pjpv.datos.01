@@ -19,7 +19,7 @@ A tibble with 194.720 rows and 13 variables
 \item ine_ccaa: Código INE de la CA (2 dígitos). Character
 \item ine_ccaa.n: Nombre de la CA. Character
 \item capital_prov: Identifica si el municipio es capital de provincia. Factor
-\item capital_prov: Identifica si el municipio es capital de CA. Factor
+\item capital_ccaa: Identifica si el municipio es capital de CA. Factor
 }
 }
 \source{
