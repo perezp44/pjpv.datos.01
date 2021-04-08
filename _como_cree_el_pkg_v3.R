@@ -372,6 +372,7 @@ help(package = pjpv2020.01)
 #- 3) Añadir el dataset en "NEWS.md" y en "README.md"
 #- 4) Efectivamente documentar, corriendo devtools::document()
 #- 5) BUILD el pkg desde RStudio: "Install and Restart"
+#- Llevar todo a Github
 
 
 devtools::document()         #- procesa los roxygen comments y las vignettes
