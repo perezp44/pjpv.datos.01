@@ -360,3 +360,14 @@ xx <- pjp_f_decimales(iris)
 
 
 help(package = pjpv2020.01)
+
+
+
+
+#- YAY ya 2021 -------------------------------------------
+
+remotes::install_github("perezp44/pjpv.datos.01")
+ss <- pjpv.datos.01::pob_muni_1996_2020
+pjpv.datos.01::pob_muni_1996_2020
+library(pjpv.datos.01)
+pob_muni_1996_2020

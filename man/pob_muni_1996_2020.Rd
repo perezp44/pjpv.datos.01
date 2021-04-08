@@ -24,8 +24,6 @@ A tibble with 194.720 rows and 13 variables
 }
 \source{
 \url{https://www.ine.es/pob_xls/pobmun.zip}
-
-\url{https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177011&menu=resultados&idp=1254734710990}
 }
 \usage{
 pob_muni_1996_2020

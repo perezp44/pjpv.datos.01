@@ -8,7 +8,6 @@
 #' Recuerda que los condominios se identifican  xq su código (ine_muni) empieza por 53.
 #'
 #' @source \url{https://www.ine.es/pob_xls/pobmun.zip}
-#' @source \url{https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177011&menu=resultados&idp=1254734710990}
 #'
 #' @format A tibble with 194.720 rows and 13 variables
 #' \itemize{
