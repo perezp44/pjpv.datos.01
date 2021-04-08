@@ -61,7 +61,7 @@ usethis::use_github() #- ESTO NO ME FUNCIONA
 
 # 1) Ya dentro del Rprojecto del pkg:
 
-usethis::use_mit_license(name = "Pedro J. Pérez")
+usethis::use_mit_license()
 #usethis::use_package("tidyverse", "Suggests")     #- no buena idea xq es un meta-pkg
 usethis::use_readme_md()                           #- modifica a tu gusto la README.md
 usethis::use_news_md()                             #- tuneala
@@ -71,7 +71,7 @@ usethis::use_description(fields = list(Title = "Paquete de uso personal",
                                        `Authors@R` = 'person("Pedro", "Perez",
                                        email = "pedro.j.perez@uv.es",
                                        role = c("aut", "cre"))',
-                                       Description = "Paquete para uso personal con algunas funciones y conjuntos de datos"))
+                                       Description = "Paquete para uso personal con conjuntos de datos"))
 
 #- para documentación
 usethis::use_roxygen_md()  #- sets up roxygen2 and enables markdown mode so you can use markdown in your roxygen2 comment blocks.
@@ -90,7 +90,7 @@ usethis::use_github_links() #- Populates the URL and BugReports fields of a GitH
 
 
 #---------------------- añadir a build ignore
-usethis:use_build_ignore("_como_cree_el_pkg_v2.R")
+usethis:use_build_ignore("_como_cree_el_pkg_v3.R")
 usethis::use_build_ignore("./_f_en_curso/")
 usethis::use_build_ignore("./_documentacion_old/")
 
