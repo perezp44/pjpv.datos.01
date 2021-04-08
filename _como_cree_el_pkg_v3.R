@@ -371,3 +371,4 @@ ss <- pjpv.datos.01::pob_muni_1996_2020
 pjpv.datos.01::pob_muni_1996_2020
 library(pjpv.datos.01)
 pob_muni_1996_2020
+devtools::document()         #- procesa los roxygen comments y las vignettes
