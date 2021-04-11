@@ -8,7 +8,7 @@ The goal del paquete `pjpv.datos.01` es alojar algunos conjuntos de datos para u
 
 ## Installation
 
-You can install the Github version of `pjpv.datos.01` with:
+You can install the Github version of `pjpv.datos.01` con:
 
 ``` r
 remotes::install_github("perezp44/pjpv.datos.01")

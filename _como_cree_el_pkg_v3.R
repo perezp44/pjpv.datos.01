@@ -381,6 +381,7 @@ devtools::build()
 
 #- Instalar y comprobar que todo (documentacion y datos) ha funcionado
 remotes::install_github("perezp44/pjpv.datos.01")
+pjpv.datos.01::LAU2_muni_2020_canarias
 ss <- pjpv.datos.01::pob_muni_1996_2020
 pjpv.datos.01::pob_prov_1996_2020
 library(pjpv.datos.01)
