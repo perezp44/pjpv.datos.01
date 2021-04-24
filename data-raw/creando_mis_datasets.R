@@ -77,3 +77,9 @@ zz <- LAU2_ccaa_2020_canarias %>% sf::st_set_geometry(NULL)
 names(LAU2_ccaa_2020_canarias)
 str(LAU2_ccaa_2020_canarias)
 #- usethis::use_data(LAU2_ccaa_2020_canarias, overwrite = TRUE)  #- 2021-04-08
+
+
+#- Poblacion EUROSTAT ---------------------------------
+eurostat_poblacion_NUTS_3 <- rio::import("/home/pjpv/Escritorio/my_datos_2021/datos/EUROSTAT/poblacion/eurostat_poblacion_NUTS-3.rds")
+#- usethis::use_data(eurostat_poblacion_NUTS_3, overwrite = TRUE)  #- 2021-04-24
+

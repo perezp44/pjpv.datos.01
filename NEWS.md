@@ -7,3 +7,5 @@
 * [2021-04-08]: añado geometrías municipales (Canarias desplazada) "LAU2_muni_2020_canarias". 
 * [2021-04-08]: añado geometrías provinciales (Canarias desplazada) "LAU2_prov_2020_canarias". 
 * [2021-04-08]: añado geometrías para CC.AA (Canarias desplazada) "LAU2_ccaa_2020_canarias". 
+* [2021-04-24]: añado población NUTS 3 de Eurostat. "eurostat_poblacion_NUTS_3". 
+

@@ -28,7 +28,7 @@ LAU2_ccaa_2020_canarias
 Geometrías municipales 2020 (SPAIN). Sacados del package LAU2boundaries4Spain.
 Recuerda que he desplazado Canarias
 Recuerda que hay dos tipos de centroides.
-X e Y (sin desplazar, bueno Canarias sí está desplazada)
+X e Y (sin desplazar, bueno Canarias sí está desplazada).
 X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien e los mapas)
 }
 \examples{

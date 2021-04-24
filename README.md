@@ -28,5 +28,8 @@ remotes::install_github("perezp44/pjpv.datos.01")
 
 - geometrías para CC.AA de LAU2 para 2020 (Canarias desplazada): `LAU2_ccaa_2020_canarias`
 
+- Eurostat population by sex and NUTS 3 region: `eurostat_poblacion_NUTS_3`
+
+
 
 

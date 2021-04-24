@@ -35,9 +35,9 @@ LAU2_muni_2020_canarias
 Geometrías municipales 2020 (SPAIN). Sacados del package LAU2boundaries4Spain.
 Hay 8.131 municipios + 81 condominios = 8.212 filas
 Recuerda que he desplazado Canarias
-Recuerda que hay dos tipos de centroides. Desplazados y no
-X e Y (sin desplazar, bueno Canarias sí está desplazada)
-X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien en los mapas)
+Recuerda que hay dos tipos de centroides. Desplazados y no desplazados:
+X e Y (sin desplazar, bueno Canarias sí está desplazada);
+X1 e Y1 (desplazados Ceuta y Melilla para q se vean bien en los mapas).
 }
 \examples{
 \dontrun{
